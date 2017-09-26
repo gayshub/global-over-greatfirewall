@@ -16,7 +16,9 @@
 3、获取正确的DNS，由于国内的DNS被荼毒污染的，解析的地址不对，所以使用ChinaDNS获取到正确的IP。在本地路由器上搭建ChinaDNS，项目地址  https://github.com/shadowsocks/ChinaDNS
 
 运行ChinaDNS
+  
   ./configure && make
+  
   src/chinadns -m -c chnroute.txt
 
 4、配置DHCP服务器，分发所有客户端的DNS为路由网关的IP
