@@ -10,9 +10,9 @@
 
 2. 获取国内的IP列表http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest, 推列表中的IP段到本地国内网关，让流量从国内出去。github有项目可以提取国内的列表，或者自己写脚本筛  
 配置文件参考  
-  ip-pre-up
+  ip-pre-up   #这是我筛完的
   
-3. 获取正确的DNS，由于国内的DNS被荼毒污染的，解析的地址不对，所以使用ChinaDNS获取到正确的IP。在本地路由器上搭建ChinaDNS，项目地址  https://github.com/shadowsocks/ChinaDNS  
+3. 获取正确的DNS，由于国内的DNS被荼毒污染的，解析的地址不对，所以使用ChinaDNS获取到正确的IP。在本地网关上搭建ChinaDNS，项目地址  https://github.com/shadowsocks/ChinaDNS  
 运行ChinaDNS  
     ./configure && make  
     src/chinadns -m -c chnroute.txt
