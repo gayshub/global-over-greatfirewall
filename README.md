@@ -3,6 +3,7 @@
 
 # 安装步骤
 1、首先需要一台不在墙内的服务器，比如香港。在该服务器配置openvpn server, 在你的网关服务器配置openvpn client，在server端开启全局代理
+
 配置文件参考
   openvpn-server.conf
   openvpn-client.conf
