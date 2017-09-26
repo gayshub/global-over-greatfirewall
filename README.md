@@ -26,4 +26,4 @@
 
 6. plugin目录里包含网络限速功能及openvpn自动恢复功能，后者需要添加到crond
 
-7. 启动方式可以参加rc.local, 或者可以放在openvpn-client.conf里启动，不过后者更慢
+7. 启动方式可以参考rc.local, 或者可以放在openvpn-client.conf里启动，不过后者更慢
