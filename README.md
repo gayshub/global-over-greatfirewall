@@ -29,3 +29,4 @@
 
 -A POSTROUTING -s 192.168.x.0/24 -o tun0 -j MASQUERADE    #配置你的流量经过openvpn client 网络接口tun0（一般默认）出去
 
+6、plugin目录里包含网络限速功能及openvpn自动恢复功能，后者需要添加到crond
