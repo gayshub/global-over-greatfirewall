@@ -12,8 +12,9 @@
 配置文件参考  
   ip-pre-up   #这是我筛完的
   
-3. 获取正确的DNS，由于国内的DNS被荼毒污染的，解析的地址不对，所以使用ChinaDNS获取到正确的IP。在本地网关上搭建ChinaDNS，项目地址  https://github.com/shadowsocks/ChinaDNS  
-运行ChinaDNS  
+3. 获取正确的DNS，由于国内的DNS被**荼毒污染**的，解析的地址**不正确**，所以使用ChinaDNS获取到正确的IP。在本地网关上搭建ChinaDNS，项目地址  https://github.com/shadowsocks/ChinaDNS    
+    运行ChinaDNS  
+    cd ChinaDNS-1.x.x  
     ./configure && make  
     src/chinadns -m -c chnroute.txt
 
@@ -24,3 +25,5 @@
 -A POSTROUTING -s 192.168.x.0/24 -o tun0 -j MASQUERADE    #配置你的流量经过openvpn client 网络接口tun0（一般默认）出去
 
 6. plugin目录里包含网络限速功能及openvpn自动恢复功能，后者需要添加到crond
+
+7. 启动方式可以参加rc.local, 或者可以放在openvpn-client.conf里启动，不过后者更慢
