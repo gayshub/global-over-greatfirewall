@@ -10,7 +10,7 @@ UPLOADceil="384kbps"     #限速范围IP上行最大带宽
 DOWNLOADrate="128kbps"   #限速范围IP下行保证带宽   
 DOWNLOADceil="200kbps"   #限速范围IP下行最大带宽   
  
-INET="192.168.2."    #限速网段   
+INET="192.168.x."    #限速网段   
  
 IPS="1"                 #限速范围起始IP   
 IPE="240"                 #限速范围结束IP   
